@@ -131,14 +131,6 @@ def process_user_input():
         # set curremt command
         CMD_ATM = input("$: ")
 
-def print_banner():
-    print(".__     __    __               .__           .__  .__") 
-    print("|  |___/  |__/  |_______  _____|  |__   ____ |  | |  |")  
-    print("|  |  \   __\   __\____ \/  ___/  |  \_/ __ \|  | |  | ")
-    print("|   Y  \  |  |  | |  |_> >___ \|   Y  \  ___/|  |_|  |__")
-    print("|___|  /__|  |__| |   __/____  >___|  /\___  >____/____/")
-    print("     \/           |__|       \/     \/     \/          ") 
-
 if __name__ == "__main__":
     # start flask in background as thread to allow user input
     flask_thread = threading.Thread(target=app.run)
