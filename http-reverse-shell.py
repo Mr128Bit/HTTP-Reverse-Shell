@@ -133,7 +133,7 @@ def process_user_input():
 
 if __name__ == "__main__":
     # start flask in background as thread to allow user input
-    flask_thread = threading.Thread(target=app.run)
+    flask_thread = threading.Thread(target=app.run, kwargs={"port":80})
     flask_thread.start()
 
     time.sleep(1)
