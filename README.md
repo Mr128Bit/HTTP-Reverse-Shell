@@ -18,13 +18,20 @@ The HTTP Reverse Shell is a tool designed for educational purposes to demonstrat
      ```bash
      python server.py
      ```
-   - Make sure the server is accessible from the internet or desired network.
+   - Make sure the server is accessible from the internet or desired network. (Open Port or create a reverse Proxy
+   - When asked for HTTP Host, set a host/domain that is accesbile from the client
+  
+     ![alt text](https://i.imgur.com/19CL3pC.png)
 
 2. **Client Side:**
    - Run the generated payload from the reverse shell
+
+      ![alt text](https://i.imgur.com/OWLZSno.png)
   
 3. **Command Execution:**
    - Once the client is connected, the server can send commands to the client, and the client executes them.
+
+   ![alt text](https://i.imgur.com/XSlJR4K.png)
 
 ## Disclaimer
 
